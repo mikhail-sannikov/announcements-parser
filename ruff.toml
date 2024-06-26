@@ -22,6 +22,7 @@ select = [
     'B',  # bugbear
     'SIM',  # simplify
 ]
+ignore=['ANN101']
 
 [lint.flake8-quotes]
 inline-quotes = 'single'
