@@ -1,0 +1,7 @@
+# файлы python
+__pycache__
+.idea/
+venv/
+
+# безопасность
+.env

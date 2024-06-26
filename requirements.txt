@@ -1,0 +1,14 @@
+# Django и все с ним связанное
+Django==5.0.6
+django-extensions==3.2.3
+
+# DRF и все с ним связанное
+djangorestframework==3.15.2
+drf-spectacular==0.27.2
+
+# Линтеры
+ruff==0.4.10
+
+djoser==2.2.3  # аутентификация
+python-dotenv==1.0.1  # работа с переменными окружения
+ipython==8.25.0  # оптимизация работы с терминалом

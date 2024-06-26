@@ -1,0 +1,30 @@
+exclude = [
+    '.cache/*',
+    'venv',
+    'migrations',
+    'manage.py',
+    '__init__.py',
+]
+
+line-length = 120
+target-version = 'py312'
+
+[lint]
+select = [
+    'E',  # pycodestyle errors
+    'W',  # pycodestyle warnings
+    'F',  # pyflakes
+    'I',  # isort
+    'Q',  # quotes
+    'TID',  # tidy imports
+    'ANN',  # annotations
+    'DJ',  # django
+    'B',  # bugbear
+    'SIM',  # simplify
+]
+
+[lint.flake8-quotes]
+inline-quotes = 'single'
+
+[format]
+quote-style = 'single'
