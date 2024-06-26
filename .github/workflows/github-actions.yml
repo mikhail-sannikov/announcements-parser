@@ -19,14 +19,14 @@ jobs:
         run: |
           cd src
           ./manage.py test
-    lint:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Get repository code
-          uses: actions/checkout@v4
-        - name: Install dependencies
-          run: pip install -r requirements.txt
-        - name: ruff
-          run: |
-            cd src
-            ruff check
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: ruff
+        run: |
+          cd src
+          ruff check
