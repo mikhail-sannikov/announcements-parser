@@ -1,7 +1,10 @@
-# файлы python
+# python
 __pycache__
 .idea/
 venv/
 
 # безопасность
 .env
+
+# db
+db.sqlite3
