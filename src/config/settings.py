@@ -170,6 +170,6 @@ SIMPLE_JWT = {
 # Swagger
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'ISU',
+    'TITLE': 'AnnouncementsParser',
     'VERSION': '1',
 }
