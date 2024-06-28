@@ -1,13 +1,19 @@
 from rest_framework import serializers
 
-from users.models import User
+from users import models
+
+
+class User(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = ('username', 'last_name', 'first_name', 'patronymic')
 
 
 class CreateUser(serializers.ModelSerializer):
     password_confirmation = serializers.CharField(write_only=True)
 
     class Meta:
-        model = User
+        model = models.User
         fields = ('username', 'password', 'password_confirmation')
 
     def validate(self, attrs: dict) -> dict:
