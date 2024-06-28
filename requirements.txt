@@ -1,6 +1,7 @@
 # Django и все с ним связанное
 Django==5.0.6
 django-extensions==3.2.3
+django-filter==24.2
 
 # DRF и все с ним связанное
 djangorestframework==3.15.2
