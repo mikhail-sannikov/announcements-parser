@@ -22,7 +22,7 @@
 ## Инсталляция
 
 ```shell
-pip install -r requirement.txt &&
+pip install -r requirements.txt &&
 cd src &&
 python3 manage.py migrate &&
 python3 manage.py loaddata data.json
